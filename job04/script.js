@@ -8,7 +8,7 @@ retourne false. */
 function bisextile(année) {
     var année;
 
-    if (année % 4 == 0) {
+    if (année % 4 == 0 || année % 100 != 0 || année % 400 == 0) {
         return true;    
     } else {
         return false;
