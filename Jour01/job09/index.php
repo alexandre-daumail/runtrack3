@@ -10,7 +10,7 @@
 </head>
 
 <body>
-<p id="demo"></p>
+<h1 id="demo"></h1>
 
 </body>
 

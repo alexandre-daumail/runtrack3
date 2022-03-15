@@ -50,3 +50,5 @@ let numbers = [6,1,5,3];
 tri(numbers, "desc");
 
 console.log(numbers);
+
+document.getElementById("demo").innerHTML = numbers;
