@@ -1,19 +1,31 @@
 'use strict';
 
-/* Créez une balise button ayant comme id “button”. Lorsque l’on clique 
-dessus, un <article> contenant le texte suivant est ajouté au contenu de la 
-page : “L'important n'est pas la chute, mais l'atterrissage.”. Si on clique à 
-nouveau sur ce bouton, l’article disparaît. L’apparition / Disparition doivent 
-être gérées dans une fonction nommée “showhide()”. */
+var footer = document.querySelector('footer');
 
+var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
 
+window.addEventListener('scroll', (event) => {
 
+    var progress = (document.documentElement.scrollTop / height) * 100;
 
-var button = document.querySelector('#button');
+    footer.style.width = progress + "%";
 
-button.addEventListener('click', showhide => {
+    if (progress <= 35 ){
+
+        footer.style.background = "blue";
+
+    }
+
+    else if (progress > 35  && progress <= 70 ) {
+
+        footer.style.background = "yellow";
+
+    }
+
+    else if (progress > 70  && progress <= 100 ) {
+
+        footer.style.background = "green";
+
+    }
     
-    document.querySelector("article").classList.toggle("hidden");
-
-});
-
+})

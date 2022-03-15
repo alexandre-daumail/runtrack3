@@ -4,5 +4,6 @@ body {
 
 footer{
     position: fixed;
-    width: max;
+    bottom: 0;
+    height: 5vh; 
 }
