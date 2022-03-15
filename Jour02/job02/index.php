@@ -12,7 +12,7 @@
 
 <body>
     
-    <article class="">L'important n'est pas la chute, mais l'atterrissage.</article>
+    <article >L'important n'est pas la chute, mais l'atterrissage.</article>
 
     <button id="button">Afficher/masquer article</button>
     

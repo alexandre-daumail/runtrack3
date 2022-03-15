@@ -6,15 +6,14 @@ page : “L'important n'est pas la chute, mais l'atterrissage.”. Si on clique 
 nouveau sur ce bouton, l’article disparaît. L’apparition / Disparition doivent 
 être gérées dans une fonction nommée “showhide()”. */
 
-document.addEventListener('DOMContentLoaded', function loaded() {
 
-    var button = document.querySelector('#button');
 
-    function showhide() {
-        
-        document.querySelector("article").classList.toggle("hidden");
-    }
+function showhide() {
 
-    button.addEventListener('click', showhide);
+    document.querySelector("article").classList.toggle("hidden");
+}
 
-})
+var button = document.querySelector('#button');
+
+button.addEventListener('click', showhide);
+
