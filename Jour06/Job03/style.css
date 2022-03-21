@@ -1,0 +1,33 @@
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+
+.section {
+    background-color: #88c1d0;
+    margin: 10px auto;
+    width: 23%;
+    height: 20vh;
+}
+
+@media screen and (min-width: 768px) and (max-width:1599px) {
+    body {
+        flex-wrap: wrap;
+    }
+    .section {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width:767px) {
+    body {
+        flex-direction: column;
+        padding: 50px;
+    }
+
+    .section {
+        width: 70%;
+    }
+}
