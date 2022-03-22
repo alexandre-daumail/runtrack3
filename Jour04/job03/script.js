@@ -14,10 +14,16 @@ document.addEventListener("DOMContentLoaded", () => {
     var pokemonType = [];
 
     //permet d'afficher autant de balises "option" qu'il y a de types de pokemon dans le json
-    async function searchPokemon() {
-
-        let 
+    async function fetchPokemon () {
+        const response = await fetch('pokemon.json')
+        if (!response.ok) {
+            const message = `An error has occured: ${response.status}`;
+            throw new Error(message);
+          }
+        const pokemons = await response.json()
+        return pokemons;
     }
+
 
         //teste si le fetch fonctionne puis retourne la promesse "response"
         .then(response => {
