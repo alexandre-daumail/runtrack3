@@ -10,35 +10,47 @@
     <link rel="stylesheet" href="style.css">
 
     <title>Jour 3 | Job 02</title>
+
 </head>
 
 <body>
-    
-    <main>
-
-        <h3>
-
-            Cliquez sur mélanger pour réinitiliser la partie.
-            
-            Lorsque vous cliquez sur une tuile d'arc en ciel dans la partie mélangée du haut, la tuile vient se positionner dans la partie des tuiles rangées en bas.
-
-            Si l’arc-en ciel est bien reconstitué, vous gagnez la partie. Sinon, il ne vous reste plus qu'à remélanger les tuiles ^^
-
-        <h3>
-
-        <section>
-
-            <div id="melangees"></div>
-    
-            <button id="button">Mélanger</button>
-    
-            <div id="rangees"></div>
-    
-        </section>
 
 
-    </main>   
-    
+    <h3>
+
+        Cliquez sur mélanger pour réinitiliser la partie.
+
+        Si l’arc-en ciel est bien reconstitué, vous gagnez la partie. Sinon, il ne vous reste plus qu'à remélanger les tuiles ^^
+
+    </h3>
+
+    <section>
+
+        <h1>
+
+        </h1>
+
+        <div id="melangees">
+
+        </div>
+
+        <button type="button" id="button">Mélanger</button>
+
+        <div id="rangees">
+
+            <img src="img/arc1.png" alt="1">
+            <img src="img/arc2.png" alt="2">
+            <img src="img/arc3.png" alt="3">
+            <img src="img/arc4.png" alt="4">
+            <img src="img/arc5.png" alt="5">
+            <img src="img/arc6.png" alt="6">
+            <p></p>
+
+        </div>
+
+
+
+    </section>
 
 </body>
 

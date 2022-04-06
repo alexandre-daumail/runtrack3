@@ -1,5 +1,7 @@
-main {
-    display: block;
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 h3 {
@@ -7,10 +9,23 @@ h3 {
     width: 75%;    
 }
 
+button {
+    margin-top:2vh;
+    background-color:black;
+    color:white;
+    border:none;
+    border-radius:1vh;
+    font-size:3em;
+}
 
-section {
-    border: solid 1px;
-    display: flex;
-    flex-direction: column;
-    width: 798px;
+#rangees {
+    border: solid 5px black;
+    height:450px;
+    width:860px;
+}
+
+#melangees {
+    border:solid 5px black;
+    height:450px;
+    width:860px;
 }
