@@ -1,21 +1,142 @@
-input {
+* {
+    padding: 0px;
+    margin: 0px;
+    color: #456990
+
+}
+header, footer
+{
+    background-color: #EF767A;
+    color: white;
+    justify-content: center;
+    text-align:center;
+    color: #456990
+    
+}
+
+h1 {
+    padding: 30px;
+    text-align:center;
+}
+nav > ul > li {
+    background-color: #49BEAA;
+}
+
+nav ul
+{
+    background-color: #49DCB1;
+    display: flex;
+    list-style-type: none;
+    margin: 50px;
+    padding: 2em;
+    display: flex;
+    justify-content: center;
+    border-radius: 25px;
+}
+
+nav ul li a 
+{
+    margin: 50px;
+    color: #456990
+}
+
+a
+{
+    text-decoration: none;
+    color: blue;
+}
+
+main
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content:center;
+    background-color: #eeb868;
+}
+
+aside
+{
+    text-align: center;
+    font-weight: bold;
+    background-color: #EF767A;
+}
+
+form
+{
+    width: 70%;
+    text-align:center;
+    padding: 16px;
+}
+
+form p
+{
+    font-size: large;
+    font-weight: bold;
+}
+
+legend
+{
+    font-size: 2em;
+}
+
+label
+{
+    font-size:1.1em;
+    margin-bottom:0px;
+}
+
+input[type=text], input[type=password] {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #456990;
     box-sizing: border-box;
-}
+  }
 
-input:focus {
-    background-color: lightblue;
-}
-
+/* Set a style for all buttons */
 button {
-    width: 100%;
-    background-color: #04AA6D;
-    border: none;
+    background-color: #49BEAA;
     color: white;
-    padding: 16px 32px;
-    text-decoration: none;
-    margin: 4px 2px;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
     cursor: pointer;
+    width: 30%;
+	border-radius: 25px
+  }
+  
+button:hover {
+    opacity: 0.8;
+  }  
+
+
+input:invalid+span:after {
+    position: absolute;
+    content: '✖';
+    padding-left: 5px;
 }
+  
+input:valid+span:after {
+    position: absolute;
+    content: '✓';
+    padding-left: 5px;
+}
+
+table,
+    td {
+        border: 2px solid #456990;
+        padding: 20px;
+        margin: 60px;
+
+    }
+
+    th {
+        border: 2px solid #456990;
+        padding: 20px;
+    }
+
+    img{
+        max-width: 75px;
+    }

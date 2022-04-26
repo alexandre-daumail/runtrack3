@@ -17,11 +17,28 @@
 
 </head>
 
-<header>
+<body>
+    <header>
 
 
-</header>
+    </header>
+    <aside>
+        <?php
+        if (isset($_SESSION["error"])) {
+            echo $_SESSION["error"];
+            unset($_SESSION["error"]);
+        }
 
-<?= $content ?>
+        if (isset($_SESSION["success"])) {
+            echo $_SESSION["success"];
+            unset($_SESSION["success"]);
+        }
+        ?>
+    </aside>
 
-<footer></footer>
+
+    <?= $content ?>
+
+    <footer></footer>
+</body>
+</html>

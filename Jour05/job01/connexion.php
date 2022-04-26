@@ -8,7 +8,7 @@ ob_start();
 
     <h1>Connexion</h1>
 
-    <form action="">
+    <form action="includes/connexion.inc.php">
 
         <legend>Veuillez remplir tous les champs</legend>
 

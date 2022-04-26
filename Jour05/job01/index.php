@@ -5,7 +5,18 @@ ob_start();
 ?>
 
     <main>
-        <h1>Bienvenue!</h1>
+
+        <?php
+            if (isset($_SESSION["login"])) {
+                echo "<p>Bonjour " . $_SESSION['login'] ."</p>";
+                echo "<a href='logout.php'>Déconnexion</a>";
+
+            } else {
+                echo "<a href='inscription.php'>Inscription</a>";
+                echo "<a href='login.php'>Connexion</a>";
+            }
+        ?>
+
     </main>
 
 <?php

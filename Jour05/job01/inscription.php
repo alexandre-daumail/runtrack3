@@ -1,6 +1,6 @@
 <?php
 session_start();
-$title = "Bienvenue | Page d'accueil";
+$title = "Page d'inscription";
 ob_start();
 ?>
 
@@ -8,7 +8,7 @@ ob_start();
 
     <h1>Inscription</h1>
 
-    <form action="">
+    <form action="includes/inscription.inc.php">
 
         <fieldset>
 
@@ -25,10 +25,10 @@ ob_start();
             <input id="email" type="text" name="email">
 
             <label for="pwd">Mot de passe : </label>
-            <input id="pwd" type="password" name="password">
+            <input id="pwd" type="password" name="pwd">
 
             <label for="pwd_conf">Confirmation : </label>
-            <input id="pwd_conf" type="password" name="password_conf">
+            <input id="pwd_conf" type="password" name="pwd_repeat">
 
             <button type="submit">Inscription</button>
 
