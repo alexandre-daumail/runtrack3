@@ -7,7 +7,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
     var icon = document.getElementById('icon');
 
     icon.addEventListener('click', () => {
-        nav.classList.toggle("responsive");
+        
     })
 
 })
